@@ -2008,8 +2008,10 @@ input, select, textarea {
 	}
 
 		table.default {
-			width: 100%;
+			width: 80%;
 			border-collapse: collapse;
+			margin-left:auto; 
+			margin-right:auto; 
 		}
 
 			table.default tbody tr {
