@@ -2012,6 +2012,7 @@ input, select, textarea {
 			border-collapse: collapse;
 			margin-left:auto; 
 			margin-right:auto; 
+			table-layout : fixed;
 		}
 
 			table.default tbody tr {
@@ -2023,7 +2024,8 @@ input, select, textarea {
 				}
 
 			table.default td {
-				padding: 0.5em 1em 0.5em 1em;
+				padding: 0.5em .05em 0.5em 0.5em;
+
 			}
 
 			table.default th {
