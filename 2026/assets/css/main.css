@@ -2240,7 +2240,7 @@ input, select, textarea {
 		background-size: auto, cover;
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
-		padding: 14em 0 14em 0;
+		/*padding: 14em 0 14em 0;*/
 		text-align: center;
 		color: #fff;
 	}
@@ -2299,7 +2299,7 @@ input, select, textarea {
 			}
 
 			.main > .content.dark {
-				background: #433;
+				background: #181B29;
 			}
 
 			.main > .content.style1 {
