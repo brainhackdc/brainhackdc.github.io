@@ -2550,3 +2550,16 @@ input, select, textarea {
 					font-size: 1.25em;
 				}
 	}
+
+/* Add space between organizing team images */
+#organizing-team .row {
+    margin-bottom: 2em; /* space between rows */
+}
+
+#organizing-team .col-4 {
+    padding: 1em; /* space between columns */
+}
+
+#organizing-team {
+    margin-top: 4em; /* increase as needed */
+}
