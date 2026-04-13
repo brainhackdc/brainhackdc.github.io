@@ -86,13 +86,29 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
+	:root {
+		--color-ink: #181B29;
+		--color-ink-deep: #060B18;
+		--color-navy: #0A152C;
+		--color-steel: #517CA6;
+		--color-steel-soft: #618BB0;
+		--color-sky: #649DC8;
+		--color-mist: #A0AFBC;
+		--color-slate: #939AA0;
+		--color-paper: #F3F4F5;
+		--color-paper-shadow: #D9E0E8;
+		--color-line: rgba(24, 27, 41, 0.14);
+		--color-line-strong: rgba(24, 27, 41, 0.24);
+		--color-dark-line: rgba(243, 244, 245, 0.28);
+	}
+
 	body {
 		background: #F8F8F8;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
 		font-size: 17pt;
 		line-height: 1.75em;
-		color: #000000;
+		color: #888;
 		-webkit-text-stroke: 0.1px;
 	}
 
@@ -122,7 +138,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: #666;
 		margin: 0 0 1em 0;
 		font-weight: 100;
 		line-height: 1.5em;
@@ -130,28 +146,19 @@ input, select, textarea {
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 	.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
 		color: #fff;
 	}
 
-	strong {
-		font-weight: 550;
-		text-decoration: underline;
-		color: inherit;
-
-	}
-
-	b {
-		font-weight: 550;
-		
+	strong, b {
+		font-weight: 400;
 		color: inherit;
 	}
 
 	.dark strong, .dark b {
-		font-weight: 550;
 		color: #fff;
 		color: rgba(255, 255, 255, 0.85);
 	}
@@ -165,8 +172,8 @@ input, select, textarea {
 		-webkit-transition: border-bottom-color 0.25s ease-in-out;
 		-ms-transition: border-bottom-color 0.25s ease-in-out;
 		transition: border-bottom-color 0.25s ease-in-out;
-		color: purple;
-		text-decoration: underline;
+		color: inherit;
+		text-decoration: none;
 		border-bottom: dotted 1px rgba(0, 0, 0, 0.25);
 	}
 
@@ -1970,8 +1977,8 @@ input, select, textarea {
 	.dark form .select,
 	.dark form textarea {
 		background: none;
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-		color: #fff;
+		box-shadow: inset 0 0 0 1px rgba(243, 244, 245, 0.45);
+		color: #F3F4F5;
 	}
 
 		.dark form input[type="text"]:focus,
@@ -1980,8 +1987,8 @@ input, select, textarea {
 		.dark form select:focus,
 		.dark form .select:focus,
 		.dark form textarea:focus {
-			background: rgba(255, 255, 255, 0.1);
-			box-shadow: inset 0 0 0 1px #fff;
+			background: rgba(243, 244, 245, 0.1);
+			box-shadow: inset 0 0 0 1px #F3F4F5;
 		}
 
 	.dark form .select:before {
@@ -1990,24 +1997,23 @@ input, select, textarea {
 	}
 
 	.dark form .formerize-placeholder {
-		color: #aaa !important;
-		color: rgba(255, 255, 255, 0.85) !important;
+		color: rgba(243, 244, 245, 0.85) !important;
 	}
 
 	.dark form ::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.85) !important;
+		color: rgba(243, 244, 245, 0.85) !important;
 	}
 
 	.dark form :-moz-placeholder {
-		color: rgba(255, 255, 255, 0.85) !important;
+		color: rgba(243, 244, 245, 0.85) !important;
 	}
 
 	.dark form ::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.85) !important;
+		color: rgba(243, 244, 245, 0.85) !important;
 	}
 
 	.dark form :-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.85) !important;
+		color: rgba(243, 244, 245, 0.85) !important;
 	}
 
 /* Table */
@@ -2047,11 +2053,11 @@ input, select, textarea {
 			}
 
 	.dark table.default tbody tr {
-		border-color: rgba(255, 255, 255, 0.5);
+		border-color: rgba(243, 244, 245, 0.45);
 	}
 
 		.dark table.default tbody tr:nth-child(2n+2) {
-			background: rgba(255, 255, 255, 0.1);
+			background: rgba(243, 244, 245, 0.1);
 		}
 
 /* Button */
@@ -2068,12 +2074,12 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #3d3d3d;
+		background: #13305C;
 		padding: 0.85em 3em 0.85em 3em;
 		border-radius: 0.25em;
 		cursor: pointer;
 		border: 0;
-		color: #fff;
+		color: #F3F4F5;
 		text-align: center;
 		text-decoration: none;
 	}
@@ -2083,7 +2089,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #4f4f4f;
+			background: #19427B;
 		}
 
 		input[type="button"].alt,
@@ -2092,7 +2098,7 @@ input, select, textarea {
 		button.alt,
 		.button.alt {
 			color: inherit;
-			box-shadow: inset 0 0 0 1px #e6e6e6;
+			box-shadow: inset 0 0 0 1px rgba(24, 27, 41, 0.16);
 			background: none;
 		}
 
@@ -2101,7 +2107,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: rgba(0, 0, 0, 0.025);
+				background: rgba(81, 124, 166, 0.08);
 			}
 
 	.dark input[type="button"],
@@ -2109,9 +2115,9 @@ input, select, textarea {
 	.dark input[type="reset"],
 	.dark button,
 	.dark .button {
-		background: rgba(255, 255, 255, 0.15);
-		box-shadow: inset 0 0 0 1px #fff;
-		color: #fff;
+		background: rgba(243, 244, 245, 0.12);
+		box-shadow: inset 0 0 0 1px rgba(243, 244, 245, 0.9);
+		color: #F3F4F5;
 	}
 
 		.dark input[type="button"]:hover,
@@ -2119,7 +2125,7 @@ input, select, textarea {
 		.dark input[type="reset"]:hover,
 		.dark button:hover,
 		.dark .button:hover {
-			background: rgba(255, 255, 255, 0.25);
+			background: rgba(243, 244, 245, 0.2);
 		}
 
 		.dark input[type="button"].alt,
@@ -2128,7 +2134,7 @@ input, select, textarea {
 		.dark button.alt,
 		.dark .button.alt {
 			background: none;
-			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+			box-shadow: inset 0 0 0 1px rgba(243, 244, 245, 0.45);
 		}
 
 			.dark input[type="button"].alt:hover,
@@ -2136,8 +2142,8 @@ input, select, textarea {
 			.dark input[type="reset"].alt:hover,
 			.dark button.alt:hover,
 			.dark .button.alt:hover {
-				background: rgba(255, 255, 255, 0.15);
-				box-shadow: inset 0 0 0 1px #fff;
+				background: rgba(243, 244, 245, 0.12);
+				box-shadow: inset 0 0 0 1px #F3F4F5;
 			}
 
 /* Feature Icon */
@@ -2156,14 +2162,14 @@ input, select, textarea {
 			height: 2em;
 			font-size: 4.5em;
 			border-radius: 100%;
-			box-shadow: inset 0 0 0 1px #666;
-			color: #666;
+			box-shadow: inset 0 0 0 1px #13305C;
+			color: #13305C;
 			line-height: 2em;
 		}
 
 		.feature-icon:before {
 			content: '';
-			background: #666;
+			background: #13305C;
 			position: absolute;
 			bottom: 0;
 			left: 50%;
@@ -2181,18 +2187,18 @@ input, select, textarea {
 			bottom: 0.65em;
 			width: 1px;
 			height: 4.35em;
-			background: #666;
+			background: #13305C;
 			margin-left: -0.5px;
 		}
 
 	.dark .feature-icon .icon {
-		background: rgba(255, 255, 255, 0.15);
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-		color: #fff;
+		background: rgba(243, 244, 245, 0.12);
+		box-shadow: inset 0 0 0 1px rgba(243, 244, 245, 0.45);
+		color: #F3F4F5;
 	}
 
 	.dark .feature-icon:before, .dark .feature-icon:after {
-		background: rgba(255, 255, 255, 0.5);
+		background: rgba(243, 244, 245, 0.45);
 	}
 
 /* Icons */
@@ -2303,15 +2309,15 @@ input, select, textarea {
 			}
 
 			.main > .content.style1 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #b39c68, #a56365, #412e4c);
+				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(135deg, #649DC8 0%, #517CA6 48%, #13305C 100%);
 			}
 
 			.main > .content.style2 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #384955, #655361, #85505f);
+				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(135deg, #19427B 0%, #0E2242 52%, #060B18 100%);
 			}
 
 			.main > .content.style3 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #5f796b, #3a4e59, #2f394e);
+				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(135deg, #A0AFBC 0%, #618BB0 40%, #181B29 100%);
 			}
 
 			.main > .content.style4 {
